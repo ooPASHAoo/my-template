@@ -3,7 +3,7 @@
   <tr header></tr>
   </thead>
   <tbody>
-  <tr *ngFor="let item of items" [item-detail]='item'></tr>
+  <tr *ngFor="let item of items; trackBy: trackByItemId" [item-detail]='item'></tr>
   </tbody>
 </table>
 

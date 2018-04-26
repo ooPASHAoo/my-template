@@ -26,4 +26,8 @@ export class AppComponent implements OnInit {
       score: Math.round((item.rate / 100) * 5)
     }));
   }
+
+  trackByItemId(index: number, item: any) {
+    return item['id'];
+  }
 }
