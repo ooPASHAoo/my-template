@@ -27,6 +27,10 @@ export class AppComponent implements OnInit {
     }));
   }
 
+  /**
+   * Не пересоздает компоненты если не поменялись их id
+   * https://angular.io/guide/template-syntax#ngfor-with-trackby
+   */
   trackByItemId(index: number, item: any) {
     return item['id'];
   }
